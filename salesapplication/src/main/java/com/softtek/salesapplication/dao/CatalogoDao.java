@@ -10,5 +10,5 @@ public interface CatalogoDao {
 	 * @return ArrayList<Catalogo>
 	 */
 	public ArrayList<Catalogo> getCatalogo();
-	
+	/*test*/
 }
