@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/comfin/ggecf10/!svn/ver/4461/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF
+END
+dispatcher-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/comfin/ggecf10/!svn/ver/4449/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/dispatcher-servlet.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/comfin/ggecf10/!svn/ver/4440/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/web.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/comfin/ggecf10/!svn/ver/4426/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/jdbc.properties
+END
+mail.properties
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/comfin/ggecf10/!svn/ver/4426/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/mail.properties
+END

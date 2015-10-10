@@ -1,0 +1,53 @@
+package com.softtek.salesapplication.dao;
+
+
+
+import com.softtek.salesapplication.dto.Product;
+
+public class ProductDaoTest extends SalesApplicationBaseDaoTest{
+	
+	private ProductDao productDao;
+	
+	public void setProductDao(ProductDao productDao) {
+		this.productDao = productDao;
+	}
+	
+	 public void testGetProductId(){
+		 
+			Product product = productDao.getProductById("S18_3782");
+			assertEquals("prices doesn't match", product.getBuyPrice(),32.95);
+		 }
+	 
+	 
+	/** public void testInsertProduct(){
+		 productDao.insertProduct(createProduct());
+		 Product product = productDao.getProductById("AA");
+			assertEquals("NAMEE DOESN'T  MATCH", product.getProductName(),"TEST1");
+	 }**/
+	 
+	 
+	 public void testUpdateProduct(){
+	
+		 Product product = createProduct();
+		 product.setQuantityInStock(Long.valueOf(12));
+		 productDao.updateProduct(product);
+		 Product product1 = productDao.getProductById("AA1");
+			assertEquals("quantity in stock", product.getQuantityInStock(),Long.valueOf(12));
+			
+		 
+	 }
+	 
+		 
+	 
+	 private Product createProduct(){
+		 Product product = new Product();
+		 product.setBuyPrice(12.21);
+			product.setMsrp(11.20);
+			product.setProductName("TEST1");
+			product.setQuantityInStock(234l);
+			product.setProductCode("AA");
+		 return product;
+	 }
+	
+	
+}

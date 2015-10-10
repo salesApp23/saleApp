@@ -1,0 +1,71 @@
+package com.softtek.salesapplication.dao;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.softtek.salesapplication.dto.Employee;
+
+
+public class EmployeeDaoTest extends SalesApplicationBaseDaoTest{
+	
+	private EmployeesDao employeeDao;
+	
+	
+	public void setEmployeeDao(EmployeesDao employeeDao) {
+		this.employeeDao = employeeDao;
+	}
+	
+	
+	private Employee createEmployee(Long employeeNumber){
+		Employee employee = new Employee();
+		employee.setEmployeeNumber(employeeNumber);
+		employee.setEmail("tepequelandia@hotmail.com");
+		employee.setExtension("123");
+		employee.setFirstName("Luis");
+		employee.setJobTitle("sicary chif");
+		employee.setLastName("Teqpeque");
+		employee.setOfficeCode("1");
+		return employee;
+	}
+	
+	
+	 public void testGetEmployeebyId(){		 
+		Employee employee = employeeDao.getEmployeeById(Long.valueOf("1002"));
+		assertEquals("names doens't match", employee.getFirstName(),"Diane");
+		System.out.println(employee.getReportsTo());
+		System.out.println(employee.getOfficeCode());
+	 }
+	 
+	 
+	   public void testInsertEmployee(){
+		   int number =getMaxVal("EMPLOYEENUMBER", "EMPLOYEES");		 
+		 employeeDao.insertEmployee(createEmployee(Long.valueOf(number+1)));
+		 Employee employee = employeeDao.getEmployeeById(Long.valueOf(number+1));
+	     assertEquals("names doens't match", employee.getFirstName(),"Luis");
+		
+	 } 
+	   
+	   
+	   public void testUpdateEmployee(){
+		   int number =getMaxVal("EMPLOYEENUMBER", "EMPLOYEES");		 
+		   Employee employee = employeeDao.getEmployeeById(Long.valueOf(number));
+		   employee.setFirstName("TEST");
+		 employeeDao.updateEmployee(employee);
+	     assertEquals("names doens't update", employee.getFirstName(),"TEST");
+		
+	 } 
+	   
+	   
+	   public void testSelectMultipleEmployees(){
+		   Map<String, String> map = new HashMap<String, String>();
+		   map.put("FIRSTNAME", "TEST");
+		   map.put("JOBTITLE", "sicary chif");
+		   ArrayList<Employee> employees = employeeDao.getEmployeesByCriteria(map);
+		   assertNotNull(employees);
+		   
+	   }
+	
+	
+
+}

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/comfin/ggecf10/!svn/ver/4496/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/test/java/com/softtek/salesapplication/dao
+END
+OfficesDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/comfin/ggecf10/!svn/ver/4487/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/test/java/com/softtek/salesapplication/dao/OfficesDaoTest.java
+END
+EmployeeDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/comfin/ggecf10/!svn/ver/4487/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/test/java/com/softtek/salesapplication/dao/EmployeeDaoTest.java
+END
+ProductDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/comfin/ggecf10/!svn/ver/4464/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/test/java/com/softtek/salesapplication/dao/ProductDaoTest.java
+END
+SalesApplicationBaseDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/comfin/ggecf10/!svn/ver/4496/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/test/java/com/softtek/salesapplication/dao/SalesApplicationBaseDaoTest.java
+END

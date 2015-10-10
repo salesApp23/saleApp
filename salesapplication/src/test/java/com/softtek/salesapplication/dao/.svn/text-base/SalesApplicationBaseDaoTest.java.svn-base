@@ -1,0 +1,30 @@
+package com.softtek.salesapplication.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
+
+public class SalesApplicationBaseDaoTest extends AbstractDependencyInjectionSpringContextTests {
+	
+	
+
+	JdbcTemplate jdbcTemplate = new JdbcTemplate() ;
+	
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+	
+	
+	 protected String[] getConfigLocations() {
+	        setAutowireMode(AUTOWIRE_BY_NAME);
+	        return new String[] { "classpath*:/applicationContext.xml","classpath*:/springweb-dao.xml"
+	        		,"classpath*:/springweb-service.xml"};
+	    }
+	 
+	
+	 protected int getMaxVal(String column, String table) {
+	        String query = "SELECT MAX(" + column + ") FROM " + table;
+			
+			
+			return this.jdbcTemplate.queryForInt(query);
+	 }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-2.0.6.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<http auto-config='true'>
+		<intercept-url pattern="/login.jsp*" filters="none" />		
+		<intercept-url pattern="/**" access="ROLE_INTERNAL" />		
+		<form-login login-page='/login.jsp' />
+	</http>
+	<authentication-provider>
+		<user-service>
+			<user name="user1" password="user1pass" authorities="ROLE_SALES" />
+			<user name="user2" password="user2pass" authorities="ROLE_PAYMENTS" />
+			<user name="user3" password="user3pass" authorities="ROLE_INTERNAL" />
+		</user-service>
+	</authentication-provider>
+</beans:beans>

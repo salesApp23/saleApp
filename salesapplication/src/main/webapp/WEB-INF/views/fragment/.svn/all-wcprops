@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/comfin/ggecf10/!svn/ver/4461/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/views/fragment
+END
+salesleftmenu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/comfin/ggecf10/!svn/ver/4449/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/views/fragment/salesleftmenu.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/comfin/ggecf10/!svn/ver/4461/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/views/fragment/header.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/comfin/ggecf10/!svn/ver/4449/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/views/fragment/footer.jsp
+END
+paymentsleftmenu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/comfin/ggecf10/!svn/ver/4449/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/views/fragment/paymentsleftmenu.jsp
+END
+internalinformationleftmenu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/comfin/ggecf10/!svn/ver/4450/trunk/SPRING_COURSE2011/apps/SalesWebApplication/src/main/webapp/WEB-INF/views/fragment/internalinformationleftmenu.jsp
+END

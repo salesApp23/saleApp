@@ -1,0 +1,26 @@
+package com.softtek.salesapplication.dao;
+
+
+import java.util.List;
+
+
+
+import com.softtek.salesapplication.dto.Office;
+
+/**
+ * @author Godofredo Contreras
+ *
+ */
+public class OfficesDaoTest extends SalesApplicationBaseDaoTest {
+	private OfficesDao officesDao;
+
+	public void setOfficesDao(OfficesDao officesDao) {
+		this.officesDao = officesDao;
+	}
+
+	public void testSelectOffices() {
+		List<Office> offices = officesDao.getOffices();
+		assertNotNull(offices);
+	}
+
+}

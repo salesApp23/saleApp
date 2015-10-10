@@ -1,0 +1,21 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="sec"
+	uri="http://www.springframework.org/security/tags"%>
+
+<c:url var="urlinternal" value='/internal/internalmain.htm' />
+<c:url var="urlpayments" value='/payments/paymentsmain.htm' />
+<c:url var="urlsales" value='/sales/salesmain.htm' />
+<table>
+	<tr>
+		<sec:authorize ifAnyGranted="ROLE_SALES">
+			<td><a href="<c:out value='${urlsales}'/>">Sales</a></td>
+		</sec:authorize>
+		<sec:authorize ifAnyGranted="ROLE_PAYMENTS">
+			<td><a href="<c:out value='${urlpayments}'/>">Payments</a></td>
+		</sec:authorize>
+		<sec:authorize ifAnyGranted="ROLE_INTERNAL">
+			<td><a href="<c:out value='${urlinternal}'/>">Internal
+			Information</a></td>
+		</sec:authorize>
+	</tr>
+</table>
